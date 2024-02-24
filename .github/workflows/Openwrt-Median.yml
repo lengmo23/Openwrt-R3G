@@ -159,7 +159,7 @@ jobs:
       id: tag
       if: env.UPLOAD_RELEASE == 'true' && !cancelled()
       run: |
-        echo "::set-output name=release_tag::$(date +"OPENWRT-%Y-%m-%d")"
+        echo "::set-output name=release_tag::$(date +"%Y-%m-%d-OPENWRT")"
         touch release.txt
         echo "Openwrt 23.05.2 官方源码 R3G 轻度自用包\n固件说明：https://www.right.com.cn/forum/thread-8345258-1-1.html" >> release.txt
         [ $UPLOAD_COWTRANSFER = true ] && echo "🔗 [Cowtransfer](${{ steps.cowtransfer.outputs.url }})" >> release.txt

@@ -159,7 +159,7 @@ jobs:
       id: tag
       if: env.UPLOAD_RELEASE == 'true' && !cancelled()
       run: |
-        echo "::set-output name=release_tag::$(date +"Immortalwrt-%Y-%m-%d")"
+        echo "::set-output name=release_tag::$(date +"%Y-%m-%d-Immortalwrt")"
         touch release.txt
         echo "Immortal-master R3G Median包" >> release.txt
         [ $UPLOAD_COWTRANSFER = true ] && echo "🔗 [Cowtransfer](${{ steps.cowtransfer.outputs.url }})" >> release.txt
