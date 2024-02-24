@@ -8,7 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: Immortal-master R3G
+name: Immortal-master R3G-selfhost
 
 
 on:
@@ -42,6 +42,12 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v3
 
+    - name: Initialization environment
+      env:
+        DEBIAN_FRONTEND: noninteractive
+      run: |
+        sudo mkdir -p /workdir
+        sudo chown $USER:$GROUPS /workdir
 
     - name: Clone source code
       working-directory: /workdir
