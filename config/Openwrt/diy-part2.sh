@@ -13,5 +13,13 @@
 rm -rf feeds/packages/lang/golang
 git clone https://github.com/sbwml/packages_lang_golang -b 22.x feeds/packages/lang/golang
 
+rm -rf feeds/packages/net/xray-core
+cp -r feeds/kiddin9/xray-core feeds/packages/net/xray-core
+
+rm -rf feeds/packages/net/adguardhome
+cp -r feeds/smallpackages/adguardhome feeds/packages/net/adguardhome
+
+
+
 # Modify default IP
 #sed -i 's/192.168.1.1/192.168.50.5/g' package/base-files/files/bin/config_generate
