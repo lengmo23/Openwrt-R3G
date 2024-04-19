@@ -129,7 +129,7 @@ jobs:
         rm -rf packages
         rm -rf config.buildinfo
         rm -rf feeds.buildinfo
-        rm -rf openwrt-ramips-mt7621-xiaomi_mi-router-3g.manifest
+        # rm -rf openwrt-ramips-mt7621-xiaomi_mi-router-3g.manifest
         rm -rf profiles.json
         rm -rf sha256sums
         rm -rf version.buildinfo
