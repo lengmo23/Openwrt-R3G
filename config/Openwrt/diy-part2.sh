@@ -14,10 +14,10 @@ rm -rf feeds/packages/lang/golang
 git clone https://github.com/sbwml/packages_lang_golang -b 23.x feeds/packages/lang/golang
 
 rm -rf feeds/packages/net/xray-core
-cp -r feeds/kiddin9/xray-core feeds/packages/net/xray-core
+cp -r feeds/smpackage/xray-core feeds/packages/net/xray-core
 
 rm -rf feeds/packages/net/adguardhome
-cp -r feeds/smallpackages/adguardhome feeds/packages/net/adguardhome
+cp -r feeds/smpackage/adguardhome feeds/packages/net/adguardhome
 
 
 
