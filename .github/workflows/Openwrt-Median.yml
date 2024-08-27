@@ -22,7 +22,7 @@ on:
 
 env:
   REPO_URL: https://github.com/lengmo23/openwrt
-  REPO_BRANCH: 2305-r3g
+  REPO_BRANCH: 230504-r3g
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: config/Openwrt/OP_2305-Median.config
   DIY_P1_SH: config/Openwrt/diy-part1.sh
